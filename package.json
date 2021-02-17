@@ -1,0 +1,17 @@
+{
+  "name": "dragoon",
+  "version": "1.0.0-beta",
+  "description": "i bet i could beat itunes",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electron ."
+  },
+  "author": "vijaykiran225",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.2.3",
+    "line-reader": "^0.4.0",
+    "walk": "^2.3.14"
+  }
+}

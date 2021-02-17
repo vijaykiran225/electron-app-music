@@ -1,0 +1,20 @@
+.topbar{
+    background-color: aqua;
+}
+
+.container{
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.songList{
+    
+    background-color: cornflowerblue;
+    
+}
+
+.playlist{
+    background-color: grey;
+
+}
