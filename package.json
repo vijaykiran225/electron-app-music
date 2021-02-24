@@ -2,7 +2,7 @@
   "name": "dragoon",
   "version": "1.0.0-beta",
   "description": "i bet i could beat itunes",
-  "main": "main.js",
+  "main": "ecMain.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "electron ."
@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^11.2.3",
+    "ffmetadata": "^1.6.0",
     "line-reader": "^0.4.0",
+    "music-metadata": "^7.8.0",
     "walk": "^2.3.14"
   }
 }

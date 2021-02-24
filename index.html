@@ -3,48 +3,59 @@
 <head>
     <script>
         var selectedSong = {};
+        var gState = [];
+        var toCopyPl = []
     </script>
     <script src="./player.js" defer> </script>
-    <script src="./songFetcher.js" defer> </script>
+    <script src="./action.js" defer> </script>
 
     <link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
-    <div class="topbar">
-        storm attack
-        <br>
-        choosen song : <span id="selectedSong"></span>
-        <br>
-        <button onclick="updateBrain()">Update Brain</button>
 
-        <button onclick="showBrain()">read from Brain</button>
-        <br>
-        <audio id="audioPlayer">
+    <div id="bigGuy">
 
-        </audio>
-        <br>
-        <button onclick="prev()">previous</button>
-        <button onclick="play()">play</button>
-        <button onclick="pause()">pause</button>
-        <button onclick="next()">next</button>
 
-    </div>
+        <div class="topbar">
+            storm attack
+            <br>
+            choosen song : <span id="selectedSong"></span>
+            <br>
+            <button onclick="updateBrain()">Update Brain</button>
 
-    <div class="container">
+            <button onclick="showBrain()">read from Brain</button>
 
-        <div class="songList">
+            <button onclick="organize()">organize !</button>
 
-            <ol id="songs">
+            <button onclick="writeToFile()">write to Playlist File</button>
+            <br>
+            <audio id="audioPlayer">
 
-            </ol>
+            </audio>
+            <br>
+            <button onclick="prev()">previous</button>
+            <button onclick="play()">play</button>
+            <button onclick="pause()">pause</button>
+            <button onclick="next()">next</button>
+
         </div>
-        <div class="playlist">
 
-            <ol id="plsongs">
+        <div class="container">
 
-            </ol>
+            <div class="songList">
+
+                <ol id="songs">
+
+                </ol>
+            </div>
+            <div class="playlist">
+                <ol id="plsongs">
+
+                </ol>
+            </div>
         </div>
+
     </div>
 </body>
 

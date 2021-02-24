@@ -1,20 +1,37 @@
+.bigGuy{
+    display: grid;
+    grid-template-rows: 18% 85%;
+    height: 97vh;
+}
+
 .topbar{
     background-color: aqua;
+   
+    width: 99%;
 }
 
 .container{
-    background-color: burlywood;
     display: grid;
-    grid-template-columns: 65% 35%;
+    grid-template-columns: 65% 34%;
+
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 .songList{
     
     background-color: cornflowerblue;
-    
+    color: white;
+    height: 82vh;
+    overflow: scroll;
+    scrollbar-width: 0;
 }
 
 .playlist{
     background-color: grey;
-
+    height: 82vh;
+    overflow: scroll;
+    overflow-x: hidden;
 }
